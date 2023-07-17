@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Interaktywna Galeria Sztuki</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body>
+  <h1 class="title">Galeria sztuki<br/>Rzeźba "Jelonek"</h1>
+  <div class="gallery">
+    <img id="image" class="image" src="jelonek/jelonek-glowa-row-01_001.jpg" alt="Obiekt Sztuki">
+    <div class="controls">
+      <div class="arrow" onclick="previousImage()"><i class="ti ti-arrow-big-left-filled"></i></div>
+      <div class="arrow" onclick="nextImage()"><i class="ti ti-arrow-big-right-filled"></i></div>
+      <div class="arrow" onclick="rotateDown()"><i class="ti ti-arrow-big-down-filled"></i></div>
+      <div class="arrow" onclick="rotateUp()"><i class="ti ti-arrow-big-up-filled"></i></div>
+      <div class="arrow" onclick="zoomIn()"><i class="ti ti-zoom-in-filled"></i></div>
+      <div class="arrow" onclick="zoomOut()"><i class="ti ti-zoom-out-filled"></i></div>
+      <div class="arrow" id="play-pause-button" onclick="toggleAnimation()">
+        <i class="ti ti-player-play-filled"></i>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
